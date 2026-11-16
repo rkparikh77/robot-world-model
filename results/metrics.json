@@ -1,0 +1,57 @@
+{
+  "success_threshold_cm": 1.0,
+  "arm_reach_cm": 32.0,
+  "open_loop": {
+    "multistep": {
+      "tip_error_cm_at_1": 0.233,
+      "tip_error_cm_at_5": 0.337,
+      "tip_error_cm_at_10": 0.502,
+      "tip_error_cm_at_20": 2.231,
+      "tip_error_cm_at_50": 13.465,
+      "image_mse_at_50": 0.008853048086166382
+    },
+    "onestep": {
+      "tip_error_cm_at_1": 0.193,
+      "tip_error_cm_at_5": 2.164,
+      "tip_error_cm_at_10": 4.507,
+      "tip_error_cm_at_20": 8.831,
+      "tip_error_cm_at_50": 17.77,
+      "image_mse_at_50": 0.008986643515527248
+    }
+  },
+  "reaching": {
+    "random actions": {
+      "success_rate": 0.0,
+      "median_final_cm": 26.331274572847725,
+      "mean_final_cm": 27.515995166799854,
+      "p90_final_cm": 45.445945216944594,
+      "ms_per_plan": 0.0,
+      "episodes": 100
+    },
+    "learned world model (multistep)": {
+      "success_rate": 0.69,
+      "median_final_cm": 0.5252594460460374,
+      "mean_final_cm": 2.826529380271704,
+      "p90_final_cm": 8.34528212405278,
+      "ms_per_plan": 5.273378320969641,
+      "episodes": 100
+    },
+    "learned world model (onestep)": {
+      "success_rate": 0.09,
+      "median_final_cm": 8.13269271434484,
+      "mean_final_cm": 10.516233731710575,
+      "p90_final_cm": 23.307494675890805,
+      "ms_per_plan": 5.236717619525734,
+      "episodes": 100
+    },
+    "true simulator (oracle)": {
+      "success_rate": 0.73,
+      "median_final_cm": 0.3616368836019519,
+      "mean_final_cm": 2.721343374660737,
+      "p90_final_cm": 8.71444653916595,
+      "ms_per_plan": 10.887814287270885,
+      "episodes": 100
+    }
+  },
+  "params_M": 6.0
+}

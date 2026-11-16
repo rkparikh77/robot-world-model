@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+data/
+results/raw.npz
+ckpt/smoke.pt
+ckpt/onestep.pt
