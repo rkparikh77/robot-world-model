@@ -72,7 +72,7 @@ The trained model (`ckpt/multistep.pt`, 24 MB) is included, so `evaluate.py` wor
 - **A simple robot.** Three joints in a plane. This says nothing about whether the same recipe scales to a manipulator with contacts or a legged robot.
 - **One training seed** per model and 100 evaluation targets. The gap between 69% and 73% is 4 targets and is within noise; the gap between 9% and 69% is not.
 - **The one-step and multi-step models had the same number of gradient steps**, but each multi-step update sees 10 times as many frames, so the comparison is not equal in compute.
-- **The planner settings were tuned using the true simulator** on a separate set of 30 targets, then applied unchanged to the learned model.
+- **The planner settings were tuned using the true simulator** on a separate draw of 30 targets, then applied unchanged to the learned model.
 - The upper bound is not 100%. I left the targets unfiltered so the comparison stays fair to both models.
 
 ## Files
